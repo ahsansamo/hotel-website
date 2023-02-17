@@ -14,7 +14,8 @@ const RoomProvider = ({ children }) => {
 
   useEffect(() => {
     setTotal(Number(adults[0]) + Number(kids[0]));
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  });
 
   const handleClick = (e) => {
     e.preventDefault();
